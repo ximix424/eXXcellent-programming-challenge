@@ -40,7 +40,7 @@ depending on your previous experience & development environment.
 
 Weather::
     In `weather.csv` you’ll find the daily weather data of a single month.
-    Read the file, then output the day number (column one `Day`) of the day with
+    Read the file, then output the day number (column one `WeatherDay`) of the day with
     the smallest temperature spread (difference between maximum &
     minimum temperature of the day.)
     The maximum temperature is the second column `MxT`, the minimum
