@@ -1,4 +1,4 @@
-package de.exxcellent.challenge;
+package de.exxcellent.challenge.dto;
 
 import com.opencsv.bean.CsvBindByName;
 import org.apache.commons.lang3.builder.ToStringBuilder;
@@ -14,6 +14,13 @@ public class FootballTeam {
     @CsvBindByName(column = "Goals Allowed")
     private int goalsAllowed;
 
+    public FootballTeam() {}
+
+    public FootballTeam(String team, int goals, int goalsAllowed) {
+        this.team = team;
+        this.goals = goals;
+        this.goalsAllowed = goalsAllowed;
+    }
 
     public int compareValues() {
         return Math.abs(goals-goalsAllowed);
@@ -21,6 +28,14 @@ public class FootballTeam {
 
     public String getTeam() {
         return team;
+    }
+
+    public int getGoals() {
+        return goals;
+    }
+
+    public int getGoalsAllowed() {
+        return goalsAllowed;
     }
 
     @Override

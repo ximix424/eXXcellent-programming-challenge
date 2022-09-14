@@ -1,4 +1,4 @@
-package de.exxcellent.challenge;
+package de.exxcellent.challenge.dto;
 
 import com.opencsv.bean.CsvBindByName;
 import org.apache.commons.lang3.builder.ToStringBuilder;
@@ -14,6 +14,13 @@ public class WeatherDay {
     @CsvBindByName(column = "MnT")
     private int minTemp;
 
+    public WeatherDay() {}
+
+    public WeatherDay(int dayId, int maxTemp, int minTemp) {
+        this.dayId = dayId;
+        this.maxTemp = maxTemp;
+        this.minTemp = minTemp;
+    }
 
     public int compareValues() {
         return Math.abs(maxTemp - minTemp);
@@ -21,6 +28,14 @@ public class WeatherDay {
 
     public int getDayId() {
         return dayId;
+    }
+
+    public int getMaxTemp() {
+        return maxTemp;
+    }
+
+    public int getMinTemp() {
+        return minTemp;
     }
 
     @Override
