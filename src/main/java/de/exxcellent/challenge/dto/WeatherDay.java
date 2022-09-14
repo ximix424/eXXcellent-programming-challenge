@@ -3,6 +3,9 @@ package de.exxcellent.challenge.dto;
 import com.opencsv.bean.CsvBindByName;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+/**
+ * DTO for a Weather Day
+ */
 public class WeatherDay {
 
     @CsvBindByName(column = "Day")

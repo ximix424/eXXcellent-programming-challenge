@@ -3,7 +3,10 @@ package de.exxcellent.challenge.dto;
 import com.opencsv.bean.CsvBindByName;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-public class FootballTeam {
+/**
+ * DTO for a Football Team
+ */
+public class FootballTeam  {
 
     @CsvBindByName(column = "Team")
     private String team;
